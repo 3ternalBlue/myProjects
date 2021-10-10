@@ -25,11 +25,12 @@ class finder:
 
     def browseQuotes(self, source, destination, date, print=False):
         quoteRequestPath = "/apiservices/browsequotes/v1.0/"
-        browseQuotesUrl = self.rootURL + quoteRequestPath + self.originCountry + "/" + self.currency + "/" + self.locale + "/" + source + "/" + destination + "/" + "/" + date.strftime("%Y-%m-%d")
+        browseQuotesUrl = self.rootURL + quoteRequestPath + self.originCountry + "/" + self.currency + "/" + self.locale + "/" + source + "/" + destination + "/" + date.strftime("%Y-%m-%d")
 
         response = self.session.get(browseQuotesUrl)
         resultJson = json.loads(response.text)
-        print(json.dumps(resultJson, indent=4, sort_keys=True))
+        return resultJson
+        #print(json.dumps(resultJson, indent=4, sort_keys=True))
 
 
     def getQuotes(self):

@@ -15,7 +15,10 @@ outgoingFlight.setHeaders(headers)
 incomingFlight = f.finder()
 incomingFlight.setHeaders(headers)
 
-source_array = {"DTW-sky"}
-destination_array = {"SJC-sky"}
+source_array = ["DTW-sky"]
+destination_array = ["SJC-sky"]
 
-outgoingFlight.browseQuotes(source_array[0], destination_array[0],)
+date = datetime.datetime(2021,12,16)
+
+resultJson = outgoingFlight.browseQuotes(source_array[0], destination_array[0],date)
+print(json.dumps(resultJson, indent=4, sort_keys=True))
