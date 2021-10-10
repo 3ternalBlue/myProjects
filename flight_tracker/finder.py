@@ -18,6 +18,9 @@ class finder:
         self.headers = headers
         self.createSession()
 
+    def getHeaders(self):
+        print(self.headers)
+
     def createSession(self):
         self.session = requests.Session()
         self.session.headers.update(self.headers)
@@ -30,8 +33,13 @@ class finder:
         response = self.session.get(browseQuotesUrl)
         resultJson = json.loads(response.text)
         return resultJson
-        #print(json.dumps(resultJson, indent=4, sort_keys=True))
 
+    def getPlaces(self,params):
+        placeRequestPath = "/apiservices/autosuggest/v1.0/"
+        getPlaceUrl = self.rootURL + placeRequestPath + self.originCountry + "/" + self.currency + "/" + self.locale + "/"
+        response = self.session.get(getPlaceUrl,params=params)
+        resultJson = json.loads(response.text)
+        print(json.dumps(resultJson, indent=4, sort_keys=True))
 
     def getQuotes(self):
         return self.quotes

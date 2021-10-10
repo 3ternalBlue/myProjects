@@ -18,7 +18,10 @@ incomingFlight.setHeaders(headers)
 source_array = ["DTW-sky"]
 destination_array = ["SJC-sky"]
 
-date = datetime.datetime(2021,12,16)
+date = datetime.datetime(2021,12,24)
 
-resultJson = outgoingFlight.browseQuotes(source_array[0], destination_array[0],date)
-print(json.dumps(resultJson, indent=4, sort_keys=True))
+#querystring = {"query":"Oakland"}
+#outgoingFlight.getPlaces(querystring)
+
+result = outgoingFlight.browseQuotes(source_array[0], destination_array[0],date)
+print(json.dumps(result, indent=4, sort_keys=True))
