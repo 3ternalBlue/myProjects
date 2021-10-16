@@ -1,0 +1,66 @@
+Metrics/*{{{*/
+   -  Expected return
+      ...is calculated by extrapolating historical growth out over the next decade, and discounting the future price by the current overvaluation compared to the five-year average P/S.
+
+   -  Value to net income performance
+      ...compare the relative valuation of a company to their performance.
+
+   -  Net income margin 
+   -  Return on assets
+      ...ROA is best used when comparing similar companies or by comparing a company to its own previous performance
+
+   -  Debt to capital
+/*}}}*/
+
+DCF/*{{{*/
+   FCFF = EBIT(1-T) + D&A - d(NWC) - CAPEX{{{
+         EBIT = Earnings Before Interest and Taxes
+         ...Sales – Cost of Goods Sold (COGS) – Operating Expenses – Depreciation, Amortisation
+
+      -  T = Effective Tax rate
+      
+      -  d(NWC) = Change in Net Working Capital
+         ... (Current Assets – Current Liabilities) at current period  less (Current Assets – Current Liabilities) at previous period
+
+      -  CAPEX = Capital Expenditure
+         ...(Property, Plant and Equipment + Intangible Assets) at current period  less (Property, Plant and Equipment + Intangible Assets) at previous period.
+
+      -  D&A = Depreciation & Amortization
+
+      (equivalent to ... FCFF = net income + D&A - CAPEX + other non-cash items + net gains,losses on disposals of non-current assets)
+/*}}}*/
+
+   WACC = E/V * Re + D/V * Rd * (1-Tc)/*{{{*/
+         WACC takes into account the capital structure of the company (i.e. amount of equity and debt) as well as the risk of equity and risk of debt.
+
+      -  E = Value of Equity
+         ...E can be determined by taking the 3-month average market capitalisation of the company or market capitalisation as of the reference date
+
+      -  D = Value of Debt
+         ...D can be found in the financial statements of the company
+
+      -  V = E + D
+
+      -  Re = Cost of Equity
+         ...Re can be estimated using the Capital Asset Pricing Model (CAPM)
+         Re = Rf + β(Rm-Rf)
+   
+         ...Rf is the risk-free rate which can be estimated from the yield of long-term bonds of the in which the company operates (e.g. U.S. 10-year bond yield ~3%)
+         ...β represents the volatility of the company’s stock price in the capital markets (can be found in financial statements or real-time stock information providers). Often referred as levered beta.
+         ...Rm – Rf is the equity risk premium (long-term return from the financial markets excess risk-free rate)
+
+      -  Rd = Cost of Debt
+         ...cost of debt can be estimated through various ways. A common way is to estimate the default spread of the company and add it to the risk-free rate.
+
+      -  Tc = Corporate tax rate
+
+   EV
+      -  EV = Enterprise value
+         ...sum i=1..n (FCFF[i]/(1 + WACC)^i) + TV/(1 + WACC)^n
+
+      -  TV = Terminal value
+         ...FCFF[n](1 + g)/(WACC - g)
+
+/*}}}*/
+
+/*}}}*/

@@ -46,6 +46,3 @@ class finder:
 
     def getAirports(self):
         return self.airports
-
-if __name__=="__main__":
-    list_places()
