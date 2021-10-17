@@ -61,3 +61,13 @@ class stock:
         response = self.session.get(fullPath)
         return response
 
+    def getEarningsSurprises(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'earnings-surprises'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+

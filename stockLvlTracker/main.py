@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import requests, json
-import stock_base as b
+import stock as b
 import screener as s
 
 # intention here is to track a list of stocks and indicate in case any of them rises/falls significantly from the 52wk avg 
@@ -24,14 +24,30 @@ def getSectorsList():
             ]
     return sectors
 
-def main():
+def getStockData(company):
     headers = {}
-    company = b.stock(company='VGFC')
+    company = b.stock(company=company)
     company.setHeaders(headers)
     #response = company.getRating()
     #response = company.getProfile()
+    response = company.getEarningsSurprises()
+    #response = company.getDcf() # already included in profile
 
-    screener = s.screener(sector = 'Technology')
+    if response.status_code != 200:
+        raise Exception(response.status_code)
+
+    try :
+        resultJson = json.loads(response.text)
+        with open("stockfile.json", "w") as outfile:
+            json.dump(resultJson, outfile, indent=4, sort_keys=True)
+    except :
+        print("API didn't return any data")
+
+    print(json.dumps(resultJson, indent=4, sort_keys=True))
+    return resultJson
+
+def getScreenerData():
+    screener = s.screener(sector = 'Healthcare', limit='')
     screener.createSession()
     response = screener.getScreenedValues()
 
@@ -40,18 +56,21 @@ def main():
 
     try :
         resultJson = json.loads(response.text)
-
-        #print(json.dumps(resultJson, indent=4, sort_keys=True))
-        with open("outfile.json", "w") as outfile:
+        with open("screenfile.json", "w") as outfile:
             json.dump(resultJson, outfile, indent=4, sort_keys=True)
     except :
-        print("Company didn't return any data")
+        print("API didn't return any data")
 
-def test():
-    with open('outfile.json') as f:
+    return resultJson
+
+def getFileData(file):
+    with open(file) as f:
         data = json.load(f)
 
-    print(len(data))
+def main():
+    responseJson = getStockData('T')
+    #responseJson = getScreenerData()
+
 
 if __name__=='__main__':
     main()
