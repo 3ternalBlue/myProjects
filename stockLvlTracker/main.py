@@ -30,7 +30,7 @@ def getStockData(company):
     company.setHeaders(headers)
     #response = company.getRating()
     #response = company.getProfile()
-    response = company.getEarningsSurprises()
+    #response = company.getEarningsSurprises()
     #response = company.getDcf() # already included in profile
 
     if response.status_code != 200:
@@ -68,7 +68,7 @@ def getFileData(file):
         data = json.load(f)
 
 def main():
-    responseJson = getStockData('T')
+    responseJson = getStockData('ASAN')
     #responseJson = getScreenerData()
 
 
