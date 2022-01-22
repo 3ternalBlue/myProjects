@@ -28,6 +28,7 @@ def getStockData(company):
     headers = {}
     company = b.stock(company=company)
     company.setHeaders(headers)
+    response = company.getQuote()
     #response = company.getRating()
     #response = company.getProfile()
     #response = company.getEarningsSurprises()
