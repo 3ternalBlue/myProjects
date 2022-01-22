@@ -11,7 +11,7 @@ import stock as b
 import os
 import time
 
-def analyseStock(ticker,hi,lo,cost_basis,exclusions):
+def analyseStock(ticker, hi, lo, cost_basis, exclusions = [], type = 'stock'):
     headers = {}
     company = b.stock(company=ticker)
     company.setHeaders(headers)
@@ -55,7 +55,7 @@ def analyseStock(ticker,hi,lo,cost_basis,exclusions):
     if alert :
         new_data[ticker]["Price"] = price
         new_data[ticker]["Cost Basis"] = cost_basis
-        outfile = time.strftime("%Y%m%d")
+        outfile = time.strftime("%Y%m%d") + '_' + type
         existing_data = {}
         try :
             with open(outfile, "r") as f :
@@ -75,24 +75,47 @@ if __name__=='__main__':
     with open('portfolio.json') as f:
         portfolio = json.load(f)
 
+    with open('crypto.json') as f:
+        crypto = json.load(f)
+
     with open('exclusion_list') as f:
         exclusions = f.read().splitlines()
 
     upper_wiggle = 10
     lower_wiggle = 8
 
-    alert = 0
+    stock_enable = 0
+    crypto_enable = 1
+
+    stock_alert = 0
+    crypto_alert = 0
+    # stocks
     for ticker in portfolio:
-        hi = int(portfolio[ticker]['hi'])
-        lo = int(portfolio[ticker]['lo'])
+        hi = float(portfolio[ticker]['hi'])
+        lo = float(portfolio[ticker]['lo'])
 
         hi_adj = hi - (upper_wiggle/100 * hi)
         lo_adj = lo + (upper_wiggle/100 * lo)
 
-        print(hi_adj,lo_adj)
-
         cost_basis = int(portfolio[ticker]['avg'])
-        alert = analyseStock(ticker,hi,lo,cost_basis,exclusions)
+        if (stock_enable):
+            stock_alert = stock_alert + analyseStock(ticker,hi,lo,cost_basis,exclusions,type='stock')
 
-        if (alert):
-            os.system(""" osascript -e 'display notification "{}" with title "{}"' """.format("Alert found", "Stock spike identifier"))
+    # crypto
+    for ticker in crypto:
+        hi = float(crypto[ticker]['hi'])
+        lo = float(crypto[ticker]['lo'])
+
+        hi_adj = hi - (upper_wiggle/100 * hi)
+        lo_adj = lo + (upper_wiggle/100 * lo)
+
+        cost_basis = int(crypto[ticker]['avg'])
+        if (crypto_enable):
+            crypto_alert = crypto_alert + analyseStock(ticker,hi,lo,cost_basis,type='crypto')
+
+
+    if (stock_alert):
+        os.system(""" osascript -e 'display notification "{}" with title "{}" subtitle "{}"' """.format(stock_alert,"Stock alert found","No of hits"))
+
+    if (crypto_alert):
+        os.system(""" osascript -e 'display notification "{}" with title "{}" subtitle "{}"' """.format(crypto_alert,"Crypto alert found","No of hits"))
