@@ -119,7 +119,7 @@ if __name__=='__main__':
     upper_wiggle = 10
     lower_wiggle = 8
 
-    stock_enable = 0
+    stock_enable = 1
     crypto_enable = 1
 
     stock_alert = 0
