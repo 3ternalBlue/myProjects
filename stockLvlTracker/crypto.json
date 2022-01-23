@@ -1,10 +1,11 @@
 {
-"BTCUSD" : {"hi" : 100000, "lo" : 40000, "avg" : 0},
-"ETHUSD" : {"hi" : 10000, "lo" : 2000, "avg" : 0},
+"BTCUSD" : {"hi" : 100000, "lo" : 25000, "avg" : 0},
+"ETHUSD" : {"hi" : 5000, "lo" : 1800, "avg" : 0},
 "DOTUSD" : {"hi" : 50, "lo" : 11, "avg" : 0},
-"ADAUSD" : {"hi" : 4, "lo" : 0.7, "avg" : 0},
-"LINKUSD" : {"hi" : 48, "lo" : 10, "avg" : 0},
+"ADAUSD" : {"hi" : 4, "lo" : 0.8, "avg" : 0},
+"OMGUSD" : {"hi" : 19, "lo" : 3, "avg" : 0},
+
+"LINKUSD" : {"hi" : 48, "lo" : 11, "avg" : 0},
 "NEARUSD" : {"hi" : 30, "lo" : 9, "avg" : 0},
-"HBARUSD" : {"hi" : 3, "lo" : 0.15, "avg" : 0},
-"OMGUSD" : {"hi" : 19, "lo" : 3, "avg" : 0}
+"HBARUSD" : {"hi" : 3, "lo" : 0.15, "avg" : 0}
 }
