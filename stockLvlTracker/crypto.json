@@ -8,5 +8,5 @@
 "LINKUSD" : {"hi" : 48, "lo" : 11, "avg" : 0},
 "NEARUSD" : {"hi" : 30, "lo" : 9, "avg" : 0},
 "HBARUSD" : {"hi" : 3, "lo" : 0.15, "avg" : 0},
-"API3USD" : {"hi" : 10, "lo" : 3.5, "avg" : 0}
+"MATICUSD" : {"hi" : 10, "lo" : 1.3, "avg" : 0}
 }

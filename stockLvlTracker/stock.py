@@ -40,6 +40,16 @@ class stock:
         response = self.session.get(fullPath)
         return response
 
+    def getHistoricalChart(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'historical-chart/1min'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
     def getProfile(self):
         search = ''
         fullPath = ''

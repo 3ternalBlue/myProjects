@@ -15,7 +15,11 @@ def analyseStock(ticker, hi, lo, cost_basis, exclusions = [], shit_list = [], ty
     headers = {}
     company = b.stock(company=ticker)
     company.setHeaders(headers)
+
     response = company.getQuote()
+    responseHistorical = None
+
+    time.sleep(1)
 
     if response.status_code != 200:
         raise Exception(response.status_code)
@@ -25,9 +29,31 @@ def analyseStock(ticker, hi, lo, cost_basis, exclusions = [], shit_list = [], ty
     except :
         print("API didn't return any data")
     
+    # quotes for crypto don't seem to have updated prices so getting it from historical instead
+    resultHistoricalJson = None
+    if (type == 'crypto') :
+        responseHistorical = company.getHistoricalChart()
+
+        if responseHistorical.status_code != 200:
+            raise Exception(responseHistorical.status_code)
+
+        try :
+            resultHistoricalJson = json.loads(responseHistorical.text)
+        except :
+            print("API didn't return any data")
+
     alert = 0
-    price = float(resultJson[0]['price'])
-    priceAvg50 = float(resultJson[0]['priceAvg50'])
+    if (type == 'crypto') :
+        try : # Looks like HBAR doesn't have historical
+            price = float(resultHistoricalJson[0]['close'])
+        except :
+            price = float(resultJson[0]['price'])
+
+        priceAvg50 = float(resultJson[0]['priceAvg50'])
+    else :
+        price = float(resultJson[0]['price'])
+        priceAvg50 = float(resultJson[0]['priceAvg50'])
+
     new_data = {}
     new_data[ticker] = {}
     price_data = {}
@@ -119,7 +145,7 @@ if __name__=='__main__':
     upper_wiggle = 10
     lower_wiggle = 8
 
-    stock_enable = 1
+    stock_enable = 0
     crypto_enable = 1
 
     stock_alert = 0
@@ -133,11 +159,11 @@ if __name__=='__main__':
         lo = float(portfolio[ticker]['lo'])
 
         hi_adj = hi - (upper_wiggle/100 * hi)
-        lo_adj = lo + (upper_wiggle/100 * lo)
+        lo_adj = lo + (lower_wiggle/100 * lo)
 
         cost_basis = int(portfolio[ticker]['avg'])
         if (stock_enable):
-            alert, exclude = analyseStock(ticker,hi,lo,cost_basis,exclusions,shit_list,type='stock')
+            alert, exclude = analyseStock(ticker,hi_adj,lo_adj,cost_basis,exclusions,shit_list,type='stock')
             stock_alert = stock_alert + alert
             exclude_stock_alert = exclude_stock_alert + exclude
 
@@ -147,11 +173,11 @@ if __name__=='__main__':
         lo = float(crypto[ticker]['lo'])
 
         hi_adj = hi - (upper_wiggle/100 * hi)
-        lo_adj = lo + (upper_wiggle/100 * lo)
+        lo_adj = lo + (lower_wiggle/100 * lo)
 
         cost_basis = int(crypto[ticker]['avg'])
         if (crypto_enable):
-            alert, exclude = analyseStock(ticker,hi,lo,cost_basis,exclusions,shit_list,type='crypto')
+            alert, exclude = analyseStock(ticker,hi_adj,lo_adj,cost_basis,exclusions,shit_list,type='crypto')
             crypto_alert = crypto_alert + alert
             exclude_crypto_alert = exclude_crypto_alert + exclude
 

@@ -1,2 +1,2 @@
-00 19 * * * cd /Users/sagnikdam/myProjects/stockLvlTracker && /opt/homebrew/bin/python3 /Users/sagnikdam/myProjects/stockLvlTracker/portfolio_tracker.py > /dev/null 2>&1
-00 18 * * * cd /Users/sagnikdam/myProjects/stockLvlTracker && find . -name '2022*' -ctime +7 -delete
+00 17 * * * cd /Users/sagnikdam/myProjects/stockLvlTracker && find . -name '2022*' -ctime +7 | xargs rm -rf {} \; 
+00 18 * * * cd /Users/sagnikdam/myProjects/stockLvlTracker && /opt/homebrew/bin/python3 /Users/sagnikdam/myProjects/stockLvlTracker/portfolio_tracker.py > /dev/null 2>&1
