@@ -81,3 +81,44 @@ class stock:
         response = self.session.get(fullPath)
         return response
 
+    def getAnnualIncomeStatement(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'income-statement'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
+    def getBalanceStatement(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'balance-sheet-statement'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
+    def getCashFlowStatement(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'cash-flow-statement'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
+    def getKeyMetricsTTM(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'key-metrics-ttm'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
+
