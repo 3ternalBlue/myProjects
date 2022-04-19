@@ -121,4 +121,24 @@ class stock:
         response = self.session.get(fullPath)
         return response
 
+    def getFinancialGrowth(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'financial-growth'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
+    def getEnterpriseValues(self):
+        search = ''
+        fullPath = ''
+        if (self.api == 'FMP'):
+            search = 'enterprise-values'
+            fullPath = "{}/{}/{}?apikey={}".format(self.base_url,search,self.company,self.api_key)
+
+        response = self.session.get(fullPath)
+        return response
+
 

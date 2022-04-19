@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "ELY",
+        "date": "2021-12-31",
+        "stockPrice": 23.3,
+        "numberOfShares": 94025185,
+        "marketCapitalization": 2190786810.5,
+        "minusCashAndCashEquivalents": 352221000,
+        "addTotalDebt": 1242256000,
+        "enterpriseValue": 3080821810.5
+    },
+    {
+        "symbol": "ELY",
+        "date": "2020-12-31",
+        "stockPrice": 27.889999,
+        "numberOfShares": 94201000,
+        "marketCapitalization": 2627265795.799,
+        "minusCashAndCashEquivalents": 366119000,
+        "addTotalDebt": 716872000,
+        "enterpriseValue": 2978018795.799
+    },
+    {
+        "symbol": "ELY",
+        "date": "2019-12-31",
+        "stockPrice": 21.940001,
+        "numberOfShares": 94251000,
+        "marketCapitalization": 2067867034.251,
+        "minusCashAndCashEquivalents": 106666000,
+        "addTotalDebt": 621574000,
+        "enterpriseValue": 2582775034.251
+    },
+    {
+        "symbol": "ELY",
+        "date": "2018-12-31",
+        "stockPrice": 16.280001,
+        "numberOfShares": 94579000,
+        "marketCapitalization": 1539746214.5789998,
+        "minusCashAndCashEquivalents": 63981000,
+        "addTotalDebt": 49929000,
+        "enterpriseValue": 1525694214.5789998
+    },
+    {
+        "symbol": "ELY",
+        "date": "2017-12-31",
+        "stockPrice": 15.04,
+        "numberOfShares": 94329000,
+        "marketCapitalization": 1418708160,
+        "minusCashAndCashEquivalents": 85674000,
+        "addTotalDebt": 99570000,
+        "enterpriseValue": 1432604160
+    }
+]

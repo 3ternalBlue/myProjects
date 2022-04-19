@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "TSLA",
+        "date": "2021-12-31",
+        "stockPrice": 846.349976,
+        "numberOfShares": 960000000,
+        "marketCapitalization": 812495976960,
+        "minusCashAndCashEquivalents": 17576000000,
+        "addTotalDebt": 6834000000,
+        "enterpriseValue": 801753976960
+    },
+    {
+        "symbol": "TSLA",
+        "date": "2020-12-31",
+        "stockPrice": 793.530029,
+        "numberOfShares": 960000000,
+        "marketCapitalization": 761788827840,
+        "minusCashAndCashEquivalents": 19384000000,
+        "addTotalDebt": 11688000000,
+        "enterpriseValue": 754092827840
+    },
+    {
+        "symbol": "TSLA",
+        "date": "2019-12-31",
+        "stockPrice": 128.162003,
+        "numberOfShares": 885000000,
+        "marketCapitalization": 113423372655,
+        "minusCashAndCashEquivalents": 6268000000,
+        "addTotalDebt": 13704000000,
+        "enterpriseValue": 120859372655
+    },
+    {
+        "symbol": "TSLA",
+        "date": "2018-12-31",
+        "stockPrice": 61.754002,
+        "numberOfShares": 852625000,
+        "marketCapitalization": 52653005955.25,
+        "minusCashAndCashEquivalents": 3685618000,
+        "addTotalDebt": 12114871000,
+        "enterpriseValue": 61082258955.25
+    },
+    {
+        "symbol": "TSLA",
+        "date": "2017-12-31",
+        "stockPrice": 69.164001,
+        "numberOfShares": 828790000,
+        "marketCapitalization": 57322432388.79,
+        "minusCashAndCashEquivalents": 3367914000,
+        "addTotalDebt": 10382251000,
+        "enterpriseValue": 64336769388.79
+    }
+]

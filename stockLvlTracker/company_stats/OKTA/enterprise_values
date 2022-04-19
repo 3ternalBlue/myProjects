@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "OKTA",
+        "date": "2022-01-31",
+        "stockPrice": 182.7,
+        "numberOfShares": 153756000,
+        "marketCapitalization": 28091221200,
+        "minusCashAndCashEquivalents": 260134000,
+        "addTotalDebt": 2029039000,
+        "enterpriseValue": 29860126200
+    },
+    {
+        "symbol": "OKTA",
+        "date": "2021-01-31",
+        "stockPrice": 259.06,
+        "numberOfShares": 127212000,
+        "marketCapitalization": 32955540720,
+        "minusCashAndCashEquivalents": 434607000,
+        "addTotalDebt": 1968992000,
+        "enterpriseValue": 34489925720
+    },
+    {
+        "symbol": "OKTA",
+        "date": "2020-01-31",
+        "stockPrice": 128.06,
+        "numberOfShares": 117221000,
+        "marketCapitalization": 15011321260,
+        "minusCashAndCashEquivalents": 520048000,
+        "addTotalDebt": 937705000,
+        "enterpriseValue": 15428978260
+    },
+    {
+        "symbol": "OKTA",
+        "date": "2019-01-31",
+        "stockPrice": 86.43,
+        "numberOfShares": 107504000,
+        "marketCapitalization": 9291570720,
+        "minusCashAndCashEquivalents": 298394000,
+        "addTotalDebt": 271628000,
+        "enterpriseValue": 9264804720
+    },
+    {
+        "symbol": "OKTA",
+        "date": "2018-01-31",
+        "stockPrice": 37.48,
+        "numberOfShares": 83004000,
+        "marketCapitalization": 3110989919.9999995,
+        "minusCashAndCashEquivalents": 127949000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 2983040919.9999995
+    }
+]

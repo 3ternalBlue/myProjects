@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "COST",
+        "date": "2021-08-29",
+        "stockPrice": 447.350006,
+        "numberOfShares": 443089000,
+        "marketCapitalization": 198215866808.534,
+        "minusCashAndCashEquivalents": 11258000000,
+        "addTotalDebt": 10133000000,
+        "enterpriseValue": 197090866808.534
+    },
+    {
+        "symbol": "COST",
+        "date": "2020-08-30",
+        "stockPrice": 352.140015,
+        "numberOfShares": 442297000,
+        "marketCapitalization": 155750472214.45502,
+        "minusCashAndCashEquivalents": 12277000000,
+        "addTotalDebt": 10167000000,
+        "enterpriseValue": 153640472214.45502
+    },
+    {
+        "symbol": "COST",
+        "date": "2019-09-01",
+        "stockPrice": 283.929993,
+        "numberOfShares": 439755000,
+        "marketCapitalization": 124859634071.71501,
+        "minusCashAndCashEquivalents": 8384000000,
+        "addTotalDebt": 6823000000,
+        "enterpriseValue": 123298634071.71501
+    },
+    {
+        "symbol": "COST",
+        "date": "2018-09-02",
+        "stockPrice": 236.350006,
+        "numberOfShares": 438515000,
+        "marketCapitalization": 103643022881.09,
+        "minusCashAndCashEquivalents": 6055000000,
+        "addTotalDebt": 6487000000,
+        "enterpriseValue": 104075022881.09
+    },
+    {
+        "symbol": "COST",
+        "date": "2017-09-03",
+        "stockPrice": 165.080002,
+        "numberOfShares": 438437000,
+        "marketCapitalization": 72377180836.87401,
+        "minusCashAndCashEquivalents": 4546000000,
+        "addTotalDebt": 6659000000,
+        "enterpriseValue": 74490180836.87401
+    }
+]

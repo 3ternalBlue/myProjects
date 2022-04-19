@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "SBUX",
+        "date": "2021-10-03",
+        "stockPrice": 111.449997,
+        "numberOfShares": 1180000000,
+        "marketCapitalization": 131510996460,
+        "minusCashAndCashEquivalents": 6455700000,
+        "addTotalDebt": 23605100000,
+        "enterpriseValue": 148660396460
+    },
+    {
+        "symbol": "SBUX",
+        "date": "2020-09-27",
+        "stockPrice": 90.050003,
+        "numberOfShares": 1173300000,
+        "marketCapitalization": 105655668519.90001,
+        "minusCashAndCashEquivalents": 4350900000,
+        "addTotalDebt": 16348300000,
+        "enterpriseValue": 117653068519.90001
+    },
+    {
+        "symbol": "SBUX",
+        "date": "2019-09-29",
+        "stockPrice": 84.129997,
+        "numberOfShares": 1184600000,
+        "marketCapitalization": 99660394446.2,
+        "minusCashAndCashEquivalents": 2686600000,
+        "addTotalDebt": 11167000000,
+        "enterpriseValue": 108140794446.2
+    },
+    {
+        "symbol": "SBUX",
+        "date": "2018-09-30",
+        "stockPrice": 58.59,
+        "numberOfShares": 1309100000,
+        "marketCapitalization": 76700169000,
+        "minusCashAndCashEquivalents": 8756300000,
+        "addTotalDebt": 9440100000,
+        "enterpriseValue": 77383969000
+    },
+    {
+        "symbol": "SBUX",
+        "date": "2017-10-01",
+        "stockPrice": 54.84,
+        "numberOfShares": 1431600000,
+        "marketCapitalization": 78508944000,
+        "minusCashAndCashEquivalents": 2462300000,
+        "addTotalDebt": 3932600000,
+        "enterpriseValue": 79979244000
+    }
+]

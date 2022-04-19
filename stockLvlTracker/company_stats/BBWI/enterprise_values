@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "BBWI",
+        "date": "2022-01-29",
+        "stockPrice": 53.37,
+        "numberOfShares": 281847000,
+        "marketCapitalization": 15042174390,
+        "minusCashAndCashEquivalents": 1979000000,
+        "addTotalDebt": 6013000000,
+        "enterpriseValue": 19076174390
+    },
+    {
+        "symbol": "BBWI",
+        "date": "2021-01-31",
+        "stockPrice": 45.125301,
+        "numberOfShares": 281847000,
+        "marketCapitalization": 12718430710.947,
+        "minusCashAndCashEquivalents": 3903000000,
+        "addTotalDebt": 9455000000,
+        "enterpriseValue": 18270430710.947
+    },
+    {
+        "symbol": "BBWI",
+        "date": "2020-01-31",
+        "stockPrice": 17.510105,
+        "numberOfShares": 276000000,
+        "marketCapitalization": 4832788980,
+        "minusCashAndCashEquivalents": 1499000000,
+        "addTotalDebt": 9078000000,
+        "enterpriseValue": 12411788980
+    },
+    {
+        "symbol": "BBWI",
+        "date": "2019-01-31",
+        "stockPrice": 22.231205,
+        "numberOfShares": 276163000,
+        "marketCapitalization": 6139436266.415,
+        "minusCashAndCashEquivalents": 1413000000,
+        "addTotalDebt": 5811000000,
+        "enterpriseValue": 10537436266.415
+    },
+    {
+        "symbol": "BBWI",
+        "date": "2018-01-31",
+        "stockPrice": 35.04446,
+        "numberOfShares": 287062000,
+        "marketCapitalization": 10059932776.52,
+        "minusCashAndCashEquivalents": 1515000000,
+        "addTotalDebt": 5794000000,
+        "enterpriseValue": 14338932776.52
+    }
+]

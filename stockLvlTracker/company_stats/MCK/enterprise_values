@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "MCK",
+        "date": "2021-03-31",
+        "stockPrice": 187.559998,
+        "numberOfShares": 160600000,
+        "marketCapitalization": 30122135678.800003,
+        "minusCashAndCashEquivalents": 6278000000,
+        "addTotalDebt": 9405000000,
+        "enterpriseValue": 33249135678.800003
+    },
+    {
+        "symbol": "MCK",
+        "date": "2020-03-31",
+        "stockPrice": 141.25,
+        "numberOfShares": 181000000,
+        "marketCapitalization": 25566250000,
+        "minusCashAndCashEquivalents": 4015000000,
+        "addTotalDebt": 7387000000,
+        "enterpriseValue": 28938250000
+    },
+    {
+        "symbol": "MCK",
+        "date": "2019-03-31",
+        "stockPrice": 119.25,
+        "numberOfShares": 196000000,
+        "marketCapitalization": 23373000000,
+        "minusCashAndCashEquivalents": 2981000000,
+        "addTotalDebt": 7595000000,
+        "enterpriseValue": 27987000000
+    },
+    {
+        "symbol": "MCK",
+        "date": "2018-03-31",
+        "stockPrice": 156.210007,
+        "numberOfShares": 208000000,
+        "marketCapitalization": 32491681455.999996,
+        "minusCashAndCashEquivalents": 2672000000,
+        "addTotalDebt": 7880000000,
+        "enterpriseValue": 37699681456
+    },
+    {
+        "symbol": "MCK",
+        "date": "2017-03-31",
+        "stockPrice": 138.289993,
+        "numberOfShares": 221000000,
+        "marketCapitalization": 30562088453.000004,
+        "minusCashAndCashEquivalents": 2783000000,
+        "addTotalDebt": 8362000000,
+        "enterpriseValue": 36141088453
+    }
+]
