@@ -125,7 +125,10 @@ def costOfDebt(statement_json, tax_rate):
     interest_expense = income_statement[0]['interestExpense']
     total_debt = balance_statement[0]['totalDebt']
 
-    cost_of_debt = interest_expense/total_debt * (1 - tax_rate)
+    if tax_rate<0:
+        cost_of_debt = interest_expense/total_debt * (1 - 0)
+    else:
+        cost_of_debt = interest_expense/total_debt * (1 - tax_rate)
 
     return cost_of_debt
 
@@ -176,7 +179,7 @@ def terminalValue(fcfn, wacc, terminal_rate):
 
 if __name__=='__main__':
 
-    ticker = 'OKTA'
+    ticker = 'ASML'
     log_en = 1
     fmp_en = 1
     yfi_en = 1

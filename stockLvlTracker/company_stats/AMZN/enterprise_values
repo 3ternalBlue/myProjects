@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "AMZN",
+        "date": "2021-12-31",
+        "stockPrice": 2879.56,
+        "numberOfShares": 500000000,
+        "marketCapitalization": 1439780000000,
+        "minusCashAndCashEquivalents": 36220000000,
+        "addTotalDebt": 116395000000,
+        "enterpriseValue": 1519955000000
+    },
+    {
+        "symbol": "AMZN",
+        "date": "2020-12-31",
+        "stockPrice": 3206.199951,
+        "numberOfShares": 500000000,
+        "marketCapitalization": 1603099975500,
+        "minusCashAndCashEquivalents": 42122000000,
+        "addTotalDebt": 84389000000,
+        "enterpriseValue": 1645366975500
+    },
+    {
+        "symbol": "AMZN",
+        "date": "2019-12-31",
+        "stockPrice": 1870.6801,
+        "numberOfShares": 494000000,
+        "marketCapitalization": 924115969400,
+        "minusCashAndCashEquivalents": 36092000000,
+        "addTotalDebt": 23414000000,
+        "enterpriseValue": 911437969400
+    },
+    {
+        "symbol": "AMZN",
+        "date": "2018-12-31",
+        "stockPrice": 1670.4301,
+        "numberOfShares": 487000000,
+        "marketCapitalization": 813499458700,
+        "minusCashAndCashEquivalents": 31750000000,
+        "addTotalDebt": 23495000000,
+        "enterpriseValue": 805244458700
+    },
+    {
+        "symbol": "AMZN",
+        "date": "2017-12-31",
+        "stockPrice": 1437.8199,
+        "numberOfShares": 480000000,
+        "marketCapitalization": 690153552000,
+        "minusCashAndCashEquivalents": 20522000000,
+        "addTotalDebt": 24743000000,
+        "enterpriseValue": 694374552000
+    }
+]

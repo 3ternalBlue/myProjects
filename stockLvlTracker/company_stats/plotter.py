@@ -61,7 +61,7 @@ def plot_stats(statement_json, ticker, stat = 'revenue'):
 
 if __name__=='__main__':
 
-    ticker = 'OKTA'
+    ticker = 'ASML'
 
     ## FMP
     headers = {}

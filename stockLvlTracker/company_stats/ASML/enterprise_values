@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "ASML",
+        "date": "2021-12-31",
+        "stockPrice": 644.97,
+        "numberOfShares": 418300000,
+        "marketCapitalization": 269790951000,
+        "minusCashAndCashEquivalents": 6951800000,
+        "addTotalDebt": 4075000000,
+        "enterpriseValue": 226445508350
+    },
+    {
+        "symbol": "ASML",
+        "date": "2020-12-31",
+        "stockPrice": 534.159973,
+        "numberOfShares": 418300000,
+        "marketCapitalization": 223439116705.90002,
+        "minusCashAndCashEquivalents": 6049400000,
+        "addTotalDebt": 4678200000,
+        "enterpriseValue": 188552049200.015
+    },
+    {
+        "symbol": "ASML",
+        "date": "2019-12-31",
+        "stockPrice": 294.380005,
+        "numberOfShares": 420800000,
+        "marketCapitalization": 123875106104,
+        "minusCashAndCashEquivalents": 3532300000,
+        "addTotalDebt": 3108300000,
+        "enterpriseValue": 104869840188.4
+    },
+    {
+        "symbol": "ASML",
+        "date": "2018-12-31",
+        "stockPrice": 177.190002,
+        "numberOfShares": 424900000,
+        "marketCapitalization": 75288031849.8,
+        "minusCashAndCashEquivalents": 3121100000,
+        "addTotalDebt": 3026500000,
+        "enterpriseValue": 63900227072.329994
+    },
+    {
+        "symbol": "ASML",
+        "date": "2017-12-31",
+        "stockPrice": 200.229996,
+        "numberOfShares": 429800000,
+        "marketCapitalization": 86058852280.8,
+        "minusCashAndCashEquivalents": 2259000000,
+        "addTotalDebt": 3025300000,
+        "enterpriseValue": 73916324438.68
+    }
+]

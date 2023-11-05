@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "MSFT",
+        "date": "2021-06-30",
+        "stockPrice": 284.910004,
+        "numberOfShares": 7547000000,
+        "marketCapitalization": 2150215800188,
+        "minusCashAndCashEquivalents": 11748000000,
+        "addTotalDebt": 67775000000,
+        "enterpriseValue": 2206242800188
+    },
+    {
+        "symbol": "MSFT",
+        "date": "2020-06-30",
+        "stockPrice": 203.899994,
+        "numberOfShares": 7610000000,
+        "marketCapitalization": 1551678954340,
+        "minusCashAndCashEquivalents": 13576000000,
+        "addTotalDebt": 70998000000,
+        "enterpriseValue": 1609100954340
+    },
+    {
+        "symbol": "MSFT",
+        "date": "2019-06-30",
+        "stockPrice": 140.350006,
+        "numberOfShares": 7673000000,
+        "marketCapitalization": 1076905596038,
+        "minusCashAndCashEquivalents": 11356000000,
+        "addTotalDebt": 78366000000,
+        "enterpriseValue": 1143915596038
+    },
+    {
+        "symbol": "MSFT",
+        "date": "2018-06-30",
+        "stockPrice": 105.370003,
+        "numberOfShares": 7700000000,
+        "marketCapitalization": 811349023100,
+        "minusCashAndCashEquivalents": 11946000000,
+        "addTotalDebt": 81808000000,
+        "enterpriseValue": 881211023100
+    },
+    {
+        "symbol": "MSFT",
+        "date": "2017-06-30",
+        "stockPrice": 73.040001,
+        "numberOfShares": 7746000000,
+        "marketCapitalization": 565767847746,
+        "minusCashAndCashEquivalents": 7663000000,
+        "addTotalDebt": 86194000000,
+        "enterpriseValue": 644298847746
+    }
+]

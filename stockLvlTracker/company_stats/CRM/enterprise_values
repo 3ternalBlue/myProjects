@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "CRM",
+        "date": "2022-01-31",
+        "stockPrice": 210.39,
+        "numberOfShares": 955000000,
+        "marketCapitalization": 200922450000,
+        "minusCashAndCashEquivalents": 5464000000,
+        "addTotalDebt": 13981000000,
+        "enterpriseValue": 209439450000
+    },
+    {
+        "symbol": "CRM",
+        "date": "2021-01-31",
+        "stockPrice": 213.470001,
+        "numberOfShares": 908000000,
+        "marketCapitalization": 193830760908,
+        "minusCashAndCashEquivalents": 6195000000,
+        "addTotalDebt": 6281000000,
+        "enterpriseValue": 193916760908
+    },
+    {
+        "symbol": "CRM",
+        "date": "2020-01-31",
+        "stockPrice": 170.4,
+        "numberOfShares": 829000000,
+        "marketCapitalization": 141261600000,
+        "minusCashAndCashEquivalents": 4145000000,
+        "addTotalDebt": 5868000000,
+        "enterpriseValue": 142984600000
+    },
+    {
+        "symbol": "CRM",
+        "date": "2019-01-31",
+        "stockPrice": 164.53,
+        "numberOfShares": 751000000,
+        "marketCapitalization": 123562030000,
+        "minusCashAndCashEquivalents": 2669000000,
+        "addTotalDebt": 3176000000,
+        "enterpriseValue": 124069030000
+    },
+    {
+        "symbol": "CRM",
+        "date": "2018-01-31",
+        "stockPrice": 121.92,
+        "numberOfShares": 714919000,
+        "marketCapitalization": 87162924480,
+        "minusCashAndCashEquivalents": 2543484000,
+        "addTotalDebt": 2499460000,
+        "enterpriseValue": 87118900480
+    }
+]

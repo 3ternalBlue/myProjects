@@ -1,0 +1,52 @@
+[
+    {
+        "symbol": "PANW",
+        "date": "2021-07-31",
+        "stockPrice": 458.81,
+        "numberOfShares": 96400000,
+        "marketCapitalization": 44229284000,
+        "minusCashAndCashEquivalents": 1874200000,
+        "addTotalDebt": 3539400000,
+        "enterpriseValue": 45894484000
+    },
+    {
+        "symbol": "PANW",
+        "date": "2020-07-31",
+        "stockPrice": 254.67,
+        "numberOfShares": 96900000,
+        "marketCapitalization": 24677523000,
+        "minusCashAndCashEquivalents": 2958000000,
+        "addTotalDebt": 3084100000,
+        "enterpriseValue": 24803623000
+    },
+    {
+        "symbol": "PANW",
+        "date": "2019-07-31",
+        "stockPrice": 203.62,
+        "numberOfShares": 94500000,
+        "marketCapitalization": 19242090000,
+        "minusCashAndCashEquivalents": 961400000,
+        "addTotalDebt": 1430000000,
+        "enterpriseValue": 19710690000
+    },
+    {
+        "symbol": "PANW",
+        "date": "2018-07-31",
+        "stockPrice": 230.24,
+        "numberOfShares": 91700000,
+        "marketCapitalization": 21113008000,
+        "minusCashAndCashEquivalents": 2506900000,
+        "addTotalDebt": 1920100000,
+        "enterpriseValue": 20526208000
+    },
+    {
+        "symbol": "PANW",
+        "date": "2017-07-31",
+        "stockPrice": 132.8,
+        "numberOfShares": 90600000,
+        "marketCapitalization": 12031680000.000002,
+        "minusCashAndCashEquivalents": 744300000,
+        "addTotalDebt": 524700000,
+        "enterpriseValue": 11812080000.000002
+    }
+]
